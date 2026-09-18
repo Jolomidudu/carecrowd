@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HappyGift – Give. Support. Celebrate.",
+  title: "CareCrowd – Give. Support. Celebrate.",
   description:
     "Start or support crowdfunding campaigns for the people and causes that matter. Because every gift makes a difference.",
 };

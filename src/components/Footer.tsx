@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-pink-50 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} HappyGift. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CareCrowd. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-pink-600">
               Privacy

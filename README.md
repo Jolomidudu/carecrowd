@@ -1,16 +1,16 @@
-# HappyGift 🎁
+# CareCrowd 🎁
 
 A modern crowdfunding web app inspired by GoFundMe — **Real people. Big dreams. Together.**
 
 Built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
-![HappyGift](https://img.shields.io/badge/Next.js-15-black?style=flat-square)
+![Carecrow](https://img.shields.io/badge/Next.js-15-black?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square)
 ![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square)
 
 ## Features
 
-- 🏠 Beautiful landing page matching the HappyGift design
+- 🏠 Beautiful landing page matching the CareCrowd design
 - 🔍 Browse & search campaigns by category
 - 📄 Campaign detail pages with progress, creator info, and donation flow
 - ➕ Multi-step “Start a Campaign” form
@@ -28,7 +28,7 @@ Built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS v4**
 ### Install & Run
 
 ```bash
-cd happygift
+cd carecrowd
 npm install
 npm run dev
 ```

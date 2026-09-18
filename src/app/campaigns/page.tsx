@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 
 export const metadata = {
-  title: "Explore Campaigns – HappyGift",
-  description: "Browse and support crowdfunding campaigns on HappyGift.",
+  title: "Explore Campaigns – CareCrowd",
+  description: "Browse and support crowdfunding campaigns on CareCrowd.",
 };
 
 type Props = {

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props) {
   const campaign = getCampaignById(id);
   if (!campaign) return { title: "Campaign Not Found" };
   return {
-    title: `${campaign.title} – HappyGift`,
+    title: `${campaign.title} – CareCrowd`,
     description: campaign.description,
   };
 }
@@ -146,7 +146,7 @@ export default async function CampaignDetailPage({ params }: Props) {
             </div>
 
             <p className="mt-6 text-xs text-center text-gray-400">
-              HappyGift guarantees secure payments. 100% of your donation goes
+              CareCrowd guarantees secure payments. 100% of your donation goes
               to the campaign (minus standard processing fees).
             </p>
           </div>
