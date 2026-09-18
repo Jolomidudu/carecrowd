@@ -59,7 +59,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
             setSuccess(false);
             setOpen(false);
           }}
-          className="mt-4 text-sm text-pink-600 font-medium hover:underline"
+          className="mt-4 text-sm text-yellow-600 font-medium hover:underline"
         >
           Close
         </button>
@@ -71,7 +71,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="w-full flex items-center justify-center gap-2 py-3.5 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-xl shadow-md shadow-pink-200 transition-all"
+        className="w-full flex items-center justify-center gap-2 py-3.5 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-xl shadow-md shadow-yellow-200 transition-all"
       >
         Support this campaign
         <ArrowRight className="w-4 h-4" />
@@ -103,8 +103,8 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
             }}
             className={`py-2.5 rounded-xl text-sm font-semibold transition-colors ${
               selected === a && !custom
-                ? "bg-pink-500 text-white"
-                : "bg-pink-50 text-pink-700 hover:bg-pink-100"
+                ? "bg-yellow-500 text-white"
+                : "bg-yellow-50 text-yellow-700 hover:bg-yellow-100"
             }`}
           >
             ${a}
@@ -124,7 +124,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
             value={custom}
             onChange={(e) => setCustom(e.target.value)}
             placeholder="Other"
-            className="w-full pl-7 pr-3 py-2.5 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+            className="w-full pl-7 pr-3 py-2.5 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
           />
         </div>
       </div>
@@ -138,7 +138,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Anonymous"
-          className="mt-1 w-full px-3 py-2.5 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+          className="mt-1 w-full px-3 py-2.5 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
         />
       </div>
 
@@ -151,14 +151,14 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
           onChange={(e) => setMessage(e.target.value)}
           rows={2}
           placeholder="Leave a kind note..."
-          className="mt-1 w-full px-3 py-2.5 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 resize-none"
+          className="mt-1 w-full px-3 py-2.5 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading || !amount || amount < 1}
-        className="w-full py-3.5 bg-pink-500 hover:bg-pink-600 disabled:opacity-50 text-white font-semibold rounded-xl transition-colors"
+        className="w-full py-3.5 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 text-white font-semibold rounded-xl transition-colors"
       >
         {loading ? "Processing..." : `Donate $${amount || 0}`}
       </button>

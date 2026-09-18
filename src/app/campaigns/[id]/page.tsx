@@ -42,7 +42,7 @@ export default async function CampaignDetailPage({ params }: Props) {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Link
         href="/campaigns"
-        className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-pink-600 mb-6"
+        className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-yellow-600 mb-6"
       >
         <ArrowLeft className="w-4 h-4" />
         Back to campaigns
@@ -63,7 +63,7 @@ export default async function CampaignDetailPage({ params }: Props) {
           </div>
 
           <div>
-            <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-pink-100 text-pink-700 rounded-full">
+            <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-yellow-100 text-yellow-700 rounded-full">
               {campaign.category}
             </span>
             <h1 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -72,7 +72,7 @@ export default async function CampaignDetailPage({ params }: Props) {
             <p className="mt-3 text-lg text-gray-600">{campaign.description}</p>
           </div>
 
-          <div className="prose prose-pink max-w-none">
+          <div className="prose prose-yellow max-w-none">
             <h2 className="text-xl font-bold text-gray-900">About the campaign</h2>
             <p className="text-gray-600 leading-relaxed whitespace-pre-line">
               {campaign.longDescription}
@@ -80,7 +80,7 @@ export default async function CampaignDetailPage({ params }: Props) {
           </div>
 
           {/* Creator */}
-          <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-pink-100">
+          <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-yellow-100">
             <Image
               src={campaign.creator.avatar}
               alt={campaign.creator.name}
@@ -103,10 +103,10 @@ export default async function CampaignDetailPage({ params }: Props) {
 
         {/* Sidebar */}
         <div className="lg:col-span-2">
-          <div className="sticky top-24 bg-white rounded-2xl border border-pink-100 p-6 shadow-lg shadow-pink-50">
+          <div className="sticky top-24 bg-white rounded-2xl border border-yellow-100 p-6 shadow-lg shadow-yellow-50">
             <div className="mb-4">
               <div className="flex justify-between items-baseline mb-1">
-                <span className="text-2xl font-bold text-pink-600">
+                <span className="text-2xl font-bold text-yellow-600">
                   {formatCurrency(campaign.raised)}
                 </span>
                 <span className="text-sm text-gray-400">
@@ -136,11 +136,11 @@ export default async function CampaignDetailPage({ params }: Props) {
             <DonateButton campaignId={campaign.id} />
 
             <div className="mt-4 flex gap-2">
-              <button className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border border-pink-100 text-sm font-medium text-gray-600 hover:bg-pink-50 transition-colors">
+              <button className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border border-yellow-100 text-sm font-medium text-gray-600 hover:bg-yellow-50 transition-colors">
                 <Share2 className="w-4 h-4" />
                 Share
               </button>
-              <button className="flex items-center justify-center w-11 h-11 rounded-xl border border-pink-100 text-pink-500 hover:bg-pink-50 transition-colors">
+              <button className="flex items-center justify-center w-11 h-11 rounded-xl border border-yellow-100 text-yellow-500 hover:bg-yellow-50 transition-colors">
                 <Heart className="w-5 h-5" />
               </button>
             </div>

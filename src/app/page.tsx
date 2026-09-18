@@ -27,14 +27,14 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-28">
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-200/40 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-rose-200/30 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-200/40 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-200/30 rounded-full blur-3xl" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-100 text-pink-700 text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-100 text-yellow-700 text-sm font-medium mb-6">
                 <Gift className="w-4 h-4" />
                 Give · Support · Celebrate
               </div>
@@ -44,7 +44,7 @@ export default function HomePage() {
                 <br />
                 Big dreams.
                 <br />
-                <span className="text-pink-500">Together.</span>
+                <span className="text-yellow-500">Together.</span>
               </h1>
 
               <p className="mt-6 text-lg text-gray-600 max-w-lg leading-relaxed">
@@ -55,14 +55,14 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/campaigns"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-lg shadow-pink-200 transition-all hover:shadow-xl hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-full shadow-lg shadow-yellow-200 transition-all hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Explore Campaigns
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/start"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white hover:bg-pink-50 text-pink-600 font-semibold rounded-full border-2 border-pink-200 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white hover:bg-yellow-50 text-yellow-600 font-semibold rounded-full border-2 border-yellow-200 transition-all"
                 >
                   <Gift className="w-4 h-4" />
                   Start a Campaign
@@ -81,8 +81,8 @@ export default function HomePage() {
                     key={label}
                     className="flex flex-col items-center text-center gap-2 p-3"
                   >
-                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-pink-500" />
+                    <div className="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-yellow-500" />
                     </div>
                     <span className="text-xs font-medium text-gray-600">
                       {label}
@@ -95,8 +95,8 @@ export default function HomePage() {
             {/* Featured campaign card */}
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md">
-                <div className="absolute -inset-4 bg-gradient-to-br from-pink-200 to-rose-100 rounded-[2.5rem] blur-xl opacity-60" />
-                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-pink-100">
+                <div className="absolute -inset-4 bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-[2.5rem] blur-xl opacity-60" />
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-yellow-100">
                   <div className="relative h-56">
                     <Image
                       src={featured.image}
@@ -122,7 +122,7 @@ export default function HomePage() {
                     </p>
                     <div className="mt-4">
                       <div className="flex justify-between text-sm mb-1.5">
-                        <span className="font-bold text-pink-600">
+                        <span className="font-bold text-yellow-600">
                           {formatCurrency(featured.raised)} raised
                         </span>
                         <span className="text-gray-400">{progress}%</span>
@@ -136,7 +136,7 @@ export default function HomePage() {
                     </div>
                     <Link
                       href={`/campaigns/${featured.id}`}
-                      className="mt-4 flex items-center justify-center gap-2 w-full py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-xl transition-colors"
+                      className="mt-4 flex items-center justify-center gap-2 w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-xl transition-colors"
                     >
                       Support Now
                       <ArrowRight className="w-4 h-4" />
@@ -163,7 +163,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/campaigns"
-              className="hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-pink-600 hover:text-pink-700"
+              className="hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-yellow-600 hover:text-yellow-700"
             >
               See all
               <ArrowRight className="w-4 h-4" />
@@ -179,7 +179,7 @@ export default function HomePage() {
           <div className="mt-8 text-center sm:hidden">
             <Link
               href="/campaigns"
-              className="inline-flex items-center gap-1 text-sm font-semibold text-pink-600"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-yellow-600"
             >
               See all campaigns
               <ArrowRight className="w-4 h-4" />
@@ -243,9 +243,9 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="relative p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100"
+                className="relative p-6 rounded-2xl bg-gradient-to-br from-yellow-50 to-yellow-100 border border-yellow-100"
               >
-                <span className="text-4xl font-bold text-pink-200">
+                <span className="text-4xl font-bold text-yellow-200">
                   {item.step}
                 </span>
                 <h3 className="mt-2 text-xl font-bold text-gray-900">
@@ -270,14 +270,14 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/start"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-lg shadow-pink-200 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-full shadow-lg shadow-yellow-200 transition-all"
             >
               Start a Campaign
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/campaigns"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-pink-600 font-semibold rounded-full border-2 border-pink-200 hover:bg-pink-50 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-yellow-600 font-semibold rounded-full border-2 border-yellow-200 hover:bg-yellow-50 transition-all"
             >
               <Search className="w-5 h-5" />
               Explore Campaigns

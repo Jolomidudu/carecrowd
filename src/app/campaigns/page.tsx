@@ -47,7 +47,7 @@ export default async function CampaignsPage({ searchParams }: Props) {
             name="q"
             defaultValue={params.q}
             placeholder="Search for campaigns, people or causes..."
-            className="w-full pl-12 pr-4 py-3.5 rounded-2xl border border-pink-100 bg-white focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent shadow-sm"
+            className="w-full pl-12 pr-4 py-3.5 rounded-2xl border border-yellow-100 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-sm"
           />
         </div>
       </form>
@@ -58,8 +58,8 @@ export default async function CampaignsPage({ searchParams }: Props) {
           href="/campaigns"
           className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
             category === "All"
-              ? "bg-pink-500 text-white"
-              : "bg-white text-gray-600 border border-pink-100 hover:bg-pink-50"
+              ? "bg-yellow-500 text-white"
+              : "bg-white text-gray-600 border border-yellow-100 hover:bg-yellow-50"
           }`}
         >
           All
@@ -70,8 +70,8 @@ export default async function CampaignsPage({ searchParams }: Props) {
             href={`/campaigns?category=${cat.name}`}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               category === cat.name
-                ? "bg-pink-500 text-white"
-                : "bg-white text-gray-600 border border-pink-100 hover:bg-pink-50"
+                ? "bg-yellow-500 text-white"
+                : "bg-white text-gray-600 border border-yellow-100 hover:bg-yellow-50"
             }`}
           >
             {cat.icon} {cat.name}
@@ -85,7 +85,7 @@ export default async function CampaignsPage({ searchParams }: Props) {
           <p className="text-gray-500 text-lg">No campaigns found.</p>
           <Link
             href="/campaigns"
-            className="mt-4 inline-block text-pink-600 font-semibold hover:underline"
+            className="mt-4 inline-block text-yellow-600 font-semibold hover:underline"
           >
             Clear filters
           </Link>

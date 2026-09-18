@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff7f9;
+  --background: #fffdf0;
   --foreground: #1a1a2e;
-  --primary: #ec4899;
-  --primary-dark: #db2777;
-  --accent: #fce7f3;
+  --primary: #eab308;
+  --primary-dark: #ca8a04;
+  --accent: #fef3c7;
 }
 
 @theme inline {
@@ -29,22 +29,22 @@ body {
 .progress-bar {
   height: 8px;
   border-radius: 9999px;
-  background: #fce7f3;
+  background: #fef3c7;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
   border-radius: 9999px;
-  background: linear-gradient(90deg, #ec4899, #f472b6);
+  background: linear-gradient(90deg, #eab308, #facc15);
   transition: width 0.5s ease;
 }
 
 /* Soft card shadows */
 .card-shadow {
-  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.08);
+  box-shadow: 0 4px 20px rgba(234, 179, 8, 0.08);
 }
 
 .card-shadow:hover {
-  box-shadow: 0 8px 30px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.15);
 }

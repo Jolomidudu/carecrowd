@@ -26,7 +26,7 @@ export function CampaignCard({ campaign }: { campaign: Campaign }) {
       </div>
 
       <div className="p-4 sm:p-5">
-        <h3 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-pink-600 transition-colors">
+        <h3 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-yellow-600 transition-colors">
           {campaign.title}
         </h3>
         <p className="mt-1.5 text-sm text-gray-500 line-clamp-2">
@@ -35,7 +35,7 @@ export function CampaignCard({ campaign }: { campaign: Campaign }) {
 
         <div className="mt-4">
           <div className="flex justify-between text-sm mb-1.5">
-            <span className="font-semibold text-pink-600">
+            <span className="font-semibold text-yellow-600">
               {formatCurrency(campaign.raised)} raised
             </span>
             <span className="text-gray-400">{progress}%</span>
@@ -57,7 +57,7 @@ export function CampaignCard({ campaign }: { campaign: Campaign }) {
             <Users className="w-3.5 h-3.5" />
             {campaign.supporters}
           </span>
-          <Heart className="w-3.5 h-3.5 text-pink-300" />
+          <Heart className="w-3.5 h-3.5 text-yellow-300" />
         </div>
       </div>
     </Link>

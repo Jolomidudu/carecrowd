@@ -71,8 +71,8 @@ export default function StartCampaignPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
       <div className="text-center mb-10">
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-pink-100 mb-4">
-          <Gift className="w-7 h-7 text-pink-500" />
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-yellow-100 mb-4">
+          <Gift className="w-7 h-7 text-yellow-500" />
         </div>
         <h1 className="text-3xl font-bold text-gray-900">Start a Campaign</h1>
         <p className="mt-2 text-gray-500">
@@ -87,7 +87,7 @@ export default function StartCampaignPage() {
             <div
               className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
                 step >= s
-                  ? "bg-pink-500 text-white"
+                  ? "bg-yellow-500 text-white"
                   : "bg-gray-100 text-gray-400"
               }`}
             >
@@ -96,7 +96,7 @@ export default function StartCampaignPage() {
             {s < 3 && (
               <div
                 className={`w-12 h-0.5 ${
-                  step > s ? "bg-pink-500" : "bg-gray-200"
+                  step > s ? "bg-yellow-500" : "bg-gray-200"
                 }`}
               />
             )}
@@ -104,7 +104,7 @@ export default function StartCampaignPage() {
         ))}
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-pink-100 p-6 sm:p-8 shadow-sm">
+      <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-yellow-100 p-6 sm:p-8 shadow-sm">
         {step === 1 && (
           <div className="space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">
@@ -119,7 +119,7 @@ export default function StartCampaignPage() {
                 value={form.title}
                 onChange={(e) => update("title", e.target.value)}
                 placeholder="e.g. Help Aisha Get Back to School"
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
               />
             </div>
             <div>
@@ -129,7 +129,7 @@ export default function StartCampaignPage() {
               <select
                 value={form.category}
                 onChange={(e) => update("category", e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 bg-white"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 bg-white"
               >
                 {categories.map((c) => (
                   <option key={c.name} value={c.name}>
@@ -149,14 +149,14 @@ export default function StartCampaignPage() {
                 value={form.goal}
                 onChange={(e) => update("goal", e.target.value)}
                 placeholder="5000"
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
               />
             </div>
             <button
               type="button"
               onClick={() => setStep(2)}
               disabled={!form.title || !form.goal}
-              className="w-full flex items-center justify-center gap-2 py-3.5 bg-pink-500 hover:bg-pink-600 disabled:opacity-50 text-white font-semibold rounded-xl"
+              className="w-full flex items-center justify-center gap-2 py-3.5 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 text-white font-semibold rounded-xl"
             >
               Continue
               <ArrowRight className="w-4 h-4" />
@@ -176,7 +176,7 @@ export default function StartCampaignPage() {
                 value={form.description}
                 onChange={(e) => update("description", e.target.value)}
                 placeholder="A brief summary of your campaign"
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
               />
             </div>
             <div>
@@ -189,14 +189,14 @@ export default function StartCampaignPage() {
                 value={form.longDescription}
                 onChange={(e) => update("longDescription", e.target.value)}
                 placeholder="Tell supporters why this matters..."
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300 resize-none"
               />
             </div>
             <div className="flex gap-3">
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="flex-1 py-3.5 border border-pink-200 text-pink-600 font-semibold rounded-xl hover:bg-pink-50"
+                className="flex-1 py-3.5 border border-yellow-200 text-yellow-600 font-semibold rounded-xl hover:bg-yellow-50"
               >
                 Back
               </button>
@@ -204,7 +204,7 @@ export default function StartCampaignPage() {
                 type="button"
                 onClick={() => setStep(3)}
                 disabled={!form.description || !form.longDescription}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-pink-500 hover:bg-pink-600 disabled:opacity-50 text-white font-semibold rounded-xl"
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 text-white font-semibold rounded-xl"
               >
                 Continue
                 <ArrowRight className="w-4 h-4" />
@@ -227,7 +227,7 @@ export default function StartCampaignPage() {
                 value={form.creatorName}
                 onChange={(e) => update("creatorName", e.target.value)}
                 placeholder="Grace Okafor"
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
               />
             </div>
             <div>
@@ -239,21 +239,21 @@ export default function StartCampaignPage() {
                 value={form.location}
                 onChange={(e) => update("location", e.target.value)}
                 placeholder="Lagos, Nigeria"
-                className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="w-full px-4 py-3 rounded-xl border border-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-300"
               />
             </div>
             <div className="flex gap-3">
               <button
                 type="button"
                 onClick={() => setStep(2)}
-                className="flex-1 py-3.5 border border-pink-200 text-pink-600 font-semibold rounded-xl hover:bg-pink-50"
+                className="flex-1 py-3.5 border border-yellow-200 text-yellow-600 font-semibold rounded-xl hover:bg-yellow-50"
               >
                 Back
               </button>
               <button
                 type="submit"
                 disabled={loading || !form.creatorName || !form.location}
-                className="flex-1 py-3.5 bg-pink-500 hover:bg-pink-600 disabled:opacity-50 text-white font-semibold rounded-xl"
+                className="flex-1 py-3.5 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 text-white font-semibold rounded-xl"
               >
                 {loading ? "Creating..." : "Launch Campaign"}
               </button>
