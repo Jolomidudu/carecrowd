@@ -52,7 +52,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
         </div>
         <h3 className="font-bold text-gray-900">Thank you!</h3>
         <p className="text-sm text-gray-500 mt-1">
-          Your gift of ${amount} has been recorded.
+          Your gift of ₦{amount} has been recorded.
         </p>
         <button
           onClick={() => {
@@ -107,7 +107,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
                 : "bg-yellow-50 text-yellow-700 hover:bg-yellow-100"
             }`}
           >
-            ${a}
+            ₦{a}
           </button>
         ))}
       </div>
@@ -116,7 +116,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
         <label className="text-xs font-medium text-gray-500">Custom amount</label>
         <div className="relative mt-1">
           <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-            $
+            ₦
           </span>
           <input
             type="number"
@@ -160,7 +160,7 @@ export function DonateButton({ campaignId }: { campaignId: string }) {
         disabled={loading || !amount || amount < 1}
         className="w-full py-3.5 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 text-white font-semibold rounded-xl transition-colors"
       >
-        {loading ? "Processing..." : `Donate $${amount || 0}`}
+        {loading ? "Processing..." : `Donate ₦${amount || 0}`}
       </button>
     </form>
   );

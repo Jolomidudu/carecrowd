@@ -53,7 +53,7 @@ export const campaigns: Campaign[] = [
     description:
       "Bella the golden retriever needs urgent surgery. Help us cover the medical costs.",
     longDescription:
-      "Bella is a loving 5-year-old golden retriever who recently developed a serious hip condition. The recommended surgery costs $5,000 and her family is struggling to cover it. Your donation will go directly toward veterinary bills, medication, and post-op care so Bella can run and play again.",
+      "Bella is a loving 5-year-old golden retriever who recently developed a serious hip condition. The recommended surgery costs ₦5,000 and her family is struggling to cover it. Your donation will go directly toward veterinary bills, medication, and post-op care so Bella can run and play again.",
     image:
       "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&q=80",
     category: "Animals",
@@ -91,7 +91,7 @@ export const campaigns: Campaign[] = [
     id: "4",
     title: "Medical Fund for Little Kai",
     description:
-      "Kai needs specialized treatment for a rare condition. Every dollar helps.",
+      "Kai needs specialized treatment for a rare condition. Every naira helps.",
     longDescription:
       "Kai is only 4 years old and was recently diagnosed with a rare genetic disorder. The treatment plan is expensive and insurance only covers a portion. We need community support to give Kai the best chance at a healthy childhood.",
     image:

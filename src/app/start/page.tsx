@@ -140,7 +140,7 @@ export default function StartCampaignPage() {
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Fundraising goal (USD) *
+                Fundraising goal (NGN) *
               </label>
               <input
                 required
